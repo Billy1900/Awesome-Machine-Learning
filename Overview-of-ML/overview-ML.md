@@ -18,6 +18,16 @@ When this is the case, it’s is deciding how to classify the input, and so is k
 The lines drawn between classes are known as the decision boundaries. The entire area that is chosen to define a class is known as the decision surface. The decision surface defines that if a data point falls within its boundaries, it will be assigned a certain class.
 ![image](classification.png)
 
+- Logistic regression and multinomial regression
+- Artificial Neural networks
+- Decision tree, forest, and jungles
+- SVM (support vector machine)
+- Perceptron methods 
+- Bayesian classifiers (e.g., Naive Bayes)
+- Nearest neighbor methods (e.g., k-NN or k-Nearest Neighbors)
+- One versus all multiclass
+
+
 ### 1.2 Regression
 Alternatively, the output could be a real-world scalar (output a number):
 `Input [temperature=20] -> Model -> Output = [visitors=300]`
@@ -30,24 +40,57 @@ Both the classification and regression supervised learning techniques can be ext
 
 A recent example shown below uses a model trained with supervised learning to realistically fake videos of people talking. You might be wondering how does this complex image based task relate to classification or regression? Well, it comes back to everything in the world, even complex phenomenon, being fundamentally described with math and numbers. In this example, a neural network is still only outputting numbers like in regression. But in this example the numbers are the numerical 3d coordinate values of a facial mesh.
 
-<video src="https://youtu.be/ZtP3gl_2kBM" controls="controls" width="500" height="300">Your user agent does not support the HTML5 Video element.</video>
+- Simple and multiple linear regression
+- Ordinary Least Squares Regression (OLSR)
+- Logistic Regression
+- Stepwise Regression
+- Multivariate Adaptive Regression Splines (MARS)
+- Locally Estimated Scatterplot Smoothing (LOESS)
+- Decision tree or forest regression
+- Artificial Neural networks
+- Ordinal regression
+- Poisson regression
+- Nearest neighbor methods (e.g., k-NN or k-Nearest Neighbors)
 
-# 2. unsupervised Learning
+[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1608989669/video_to_markdown/images/youtube--ZtP3gl_2kBM-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/ZtP3gl_2kBM "")
+
+# 2. Unsupervised Learning
 In unsupervised learning, only input data is provided in the examples. There are no labelled example outputs to aim for. But it may be surprising to know that it is still possible to find many interesting and complex patterns hidden within data without any labels.
 
 ## 2.1 Cluster
 Unsupervised learning is mostly used for clustering. Clustering is the act of creating groups with differing characteristics. Clustering attempts to find various subgroups within a dataset.
+- K-means clustering
+- Hierarchical clustering
+- k-Medians
+- Expectation Maximisation (EM)
 ![image](cluster.png)
 ## 2.2 Association
 In Association Learning you want to uncover the rules that describe your data. For example, if a person watches video A they will likely watch video B. Association rules are perfect for examples such as this where you want to find related items.
+
+The most popular association rule learning algorithms are:
+- Apriori algorithm
+- Eclat algorithm
 ## 2.3 Amomaly Detection
 The identification of rare or unusual items that differ from the majority of data. For example, your bank will use this to detect fraudulent activity on your card. Your normal spending habits will fall within a normal range of behaviors and values. But when someone tries to steal from you using your card the behavior will be different from your normal pattern. Anomaly detection uses unsupervised learning to separate and detect these strange occurrences.
+- Support vector machine (one class)
+- PCA (Principle component analysis)
 ## 2.4 Dimensionality Reduction
 Dimensionality reduction aims to find the most important features to reduce the original feature set down into a smaller more efficient set that still encodes the important data.
 
 For example, in predicting the number of visitors to the beach we might use the temperature, day of the week, month and number of events scheduled for that day as inputs. But the month might actually be not important for predicting the number of visitors.
 
 Irrelevant features such as this can confuse a Machine Leaning algorithms and make them less efficient and accurate. By using dimensionality reduction, only the most important features are identified and used. Principal Component Analysis (PCA) is a commonly used technique.
+
+- Principal Component Analysis (PCA)
+- Principal Component Regression (PCR)
+- Partial Least Squares Regression (PLSR)
+- Sammon Mapping
+- Multidimensional Scaling (MDS)
+- Projection Pursuit
+- Linear Discriminant Analysis (LDA)
+- Mixture Discriminant Analysis (MDA)
+- Quadratic Discriminant Analysis (QDA)
+- Flexible Discriminant Analysis (FDA)
 
 ## 3. Semi-supervised learning
 Semi-supervised learning is a mix between supervised and unsupervised approaches. The learning process isn’t closely supervised with example outputs for every single input, but we also don’t let the algorithm do its own thing and provide no form of feedback.
@@ -57,14 +100,15 @@ GANs use two neural networks, a generator and discriminator. The generator gener
 
 A perfect example is in medical scans, such as breast cancer scans. A trained expert is needed to label these which is time consuming and very expensive. Instead, an expert can label just a small set of breast cancer scans, and the semi-supervised algorithm would be able to leverage this small subset and apply it to a larger set of scans.
 
-<video src="https://youtu.be/D4C1dB9UheQ" controls="controls" width="500" height="300">Your user agent does not support the HTML5 Video element.</video>
+[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1608989717/video_to_markdown/images/youtube--D4C1dB9UheQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/D4C1dB9UheQ "")
 
 # 4. Reinforcement Learning
 RL doesn’t use labels as such, and instead uses rewards to learn. Think of it like training a dog, good behaviours are rewarded with a treat and become more common. Bad behaviours are punished and become less common. This reward-motivated behaviour is key in reinforcement learning.
+
 ![image](RL.gif)
 
 One of the most exciting parts of Reinforcement Learning is that is a first step away from training on static datasets, and instead of being able to use dynamic, noisy data-rich environments. 
 
 Games are very popular in Reinforcement Learning research. They provide ideal data-rich environments. The scores in games are ideal reward signals to train reward-motivated behaviours. Additionally, time can be sped up in a simulated game environment to reduce overall training time. A Reinforcement Learning algorithm just aims to maximise its rewards by playing the game over and over again. 
 
-<video src="https://youtu.be/Ih8EfvOzBOY" controls="controls" width="500" height="300">Your user agent does not support the HTML5 Video element.</video>
+[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1608989749/video_to_markdown/images/youtube--Ih8EfvOzBOY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/Ih8EfvOzBOY "")
