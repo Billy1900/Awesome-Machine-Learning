@@ -4,6 +4,7 @@ Learning tutorial for machine learning beginners
 - [CS221: Artificial Intelligence: Principles and Techniques](https://stanford-cs221.github.io/spring2020/): In this course, you will learn the foundational principles that drive these applications and practice implementing some of these systems. Specific topics include machine learning, search, game playing, Markov decision processes, constraint satisfaction, graphical models, and logic.
 
 ## 1. Machine Learning Theory
+- [Machine Learning](https://www.coursera.org/learn/machine-learning): This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI). 
 - [CS229: Machine Learning](http://cs229.stanford.edu/): This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative/discriminative learning, parametric/non-parametric learning, neural networks, support vector machines); unsupervised learning (clustering, dimensionality reduction, kernel methods); learning theory (bias/variance tradeoffs, practical advice); reinforcement learning and adaptive control. The course will also discuss recent applications of machine learning, such as to robotic control, data mining, autonomous navigation, bioinformatics, speech recognition, and text and web data processing.
 
 
@@ -17,4 +18,11 @@ Learning tutorial for machine learning beginners
 - [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/): Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks.
 
 ## CV
+- [CNN explainer](https://github.com/poloclub/cnn-explainer)
 - [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/): Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars.
+
+## GAN
+- [GAN可视化工具-GAN Lab](https://zhuanlan.zhihu.com/p/111904496)
+- [The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)
+- [GAN小结](https://zhuanlan.zhihu.com/p/34916654)
+- [生成对抗网络（GAN）的数学原理全解](https://zhuanlan.zhihu.com/p/261871560)
