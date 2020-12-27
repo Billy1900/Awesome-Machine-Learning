@@ -1,5 +1,5 @@
 # Awesome-Machine-Learning
-This [blog](https://github.com/Billy1900/Awesome-Machine-Learning/blob/main/Overview-of-ML/overview-ML.md) helps beginners get an overview of machine learning and its algorithms.
+This [blog](https://github.com/Billy1900/Awesome-Machine-Learning/blob/main/Overview-of-ML/overview-ML.md) helps beginners get an overview of machine learning and its algorithms. And this [video](https://youtu.be/aircAruvnKk) will definitely give you a good intuitive understanding of machine learning.
 ## 0. Introduction/Basics
 - [CS221: Artificial Intelligence: Principles and Techniques](https://stanford-cs221.github.io/spring2020/): In this course, you will learn the foundational principles that drive these applications and practice implementing some of these systems. Specific topics include machine learning, search, game playing, Markov decision processes, constraint satisfaction, graphical models, and logic.
 
