@@ -12,7 +12,7 @@ There are three courses I recommend,
 and the books help you grasp the theory and learn how to write code.
 - [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/): Neural networks and deep learning currently provide the best solutions to many problems in image recognition, speech recognition, and natural language processing. This book will teach you many of the core concepts behind neural networks and deep learning. The pdf version is [here](https://static.latexstudio.net/article/2018/0912/neuralnetworksanddeeplearning.pdf) and the [code](https://github.com/MichalDanielDobrzanski/DeepLearningPython35).
 
-----------------
+## 2. Diving into the general theory
 - [Convex Optimization I](https://web.stanford.edu/~boyd/cvxbook/): This course covers the ideas behind solving convex optimization problems and their applications in statistics, machine learning, signal processing, and other fields. Although many models today use non-convex goals, it helps to understand the form behind the problem of manageable optimizations.
 - [CS 228: Probabilistic Graphical Models](https://cs.stanford.edu/~ermon/cs228/index.html): Probabilistic graphical models are a powerful framework for representing complex domains using probability distributions, with numerous applications in machine learning, computer vision, natural language processing and computational biology. Graphical models bring together graph theory and probability theory, and provide a flexible framework for modeling large collections of random variables with complex interactions. This course will provide a comprehensive survey of the topic, introducing the key formalisms and main techniques used to construct them, make predictions, and support decision-making under uncertainty.
 
