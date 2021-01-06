@@ -44,6 +44,6 @@ Besides, there are some websites you could learn programming related to RL.
 - [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/): The game of Pong is an excellent example of a simple RL task.
 ![image](http://karpathy.github.io/assets/rl/pong.gif)
 - [Using Keras and Deep Deterministic Policy Gradient to play TORCS](https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html): we will demonstrate how to use the Deep Deterministic Policy Gradient algorithm (DDPG) with Keras together to play TORCS (The Open Racing Car Simulator), a very interesting AI racing game and research platform.
-![image](https://yanpanlau.github.io/img/torcs/fast.gif)
+[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1609914917/video_to_markdown/images/youtube--4hoLGtnK_3U-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/4hoLGtnK_3U "")
 
 If you still want to dive deeper into RL, this book [Reinforcement learning: an introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) could help you get a good theoretical understanding of RL and its [code implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction).
