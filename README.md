@@ -29,8 +29,7 @@ and the books help you grasp the theory and learn how to write code.
 ## 6. GAN
 - [GAN Lab](https://zhuanlan.zhihu.com/p/111904496): visualize how GAN network work.
 - [The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)
-- [GAN小结](https://zhuanlan.zhihu.com/p/34916654)
-- [生成对抗网络（GAN）的数学原理全解](https://zhuanlan.zhihu.com/p/261871560)
+- [A Mathematical Introduction to Generative Adversarial Nets](https://arxiv.org/abs/2009.00169)
 
 ## 7. Machine learning on graphs--Graph Neural Network (GNN)
 There is [blog](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN.
