@@ -34,3 +34,16 @@ and the books help you grasp the theory and learn how to write code.
 
 ## 7. Machine learning on graphs--Graph Neural Network (GNN)
 There is [blog](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN.
+
+## 8. Reinforcement learning
+- [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234)
+
+Besides, there are some websites you could learn programming related to RL.
+- [Gym](https://gym.openai.com/): Gym is a toolkit for developing and comparing reinforcement learning algorithms. 
+- [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
+- [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/): The game of Pong is an excellent example of a simple RL task.
+![image](http://karpathy.github.io/assets/rl/pong.gif)
+- [Using Keras and Deep Deterministic Policy Gradient to play TORCS](https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html): we will demonstrate how to use the Deep Deterministic Policy Gradient algorithm (DDPG) with Keras together to play TORCS (The Open Racing Car Simulator), a very interesting AI racing game and research platform.
+![image](https://yanpanlau.github.io/img/torcs/fast.gif)
+
+If you still want to dive deeper into RL, this book [Reinforcement learning: an introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) could help you get a good theoretical understanding of RL and its [code implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction).
