@@ -41,6 +41,7 @@ There is [blog](https://github.com/Billy1900/GNN-Learning-and-Integration) which
 ## 8. Reinforcement learning
 - [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234)
 - [Easy-RL](https://datawhalechina.github.io/easy-rl/#/): A book written Hung-Yee Li.
+
 Besides, there are some websites you could learn programming related to RL.
 - [Gym](https://gym.openai.com/): Gym is a toolkit for developing and comparing reinforcement learning algorithms. 
 - [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
