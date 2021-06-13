@@ -28,17 +28,16 @@ There are three courses I recommend,
 ## 5. CV
 - [CNN explainer](https://github.com/poloclub/cnn-explainer)
 - [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/): Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars.
-
-## 6. GAN
+### 5.1 GAN
 - [Introduction of Generative Adversarial Network (GAN) by Hung-yi Lee](http://speech.ee.ntu.edu.tw/~tlkagk/slide/Tutorial_HYLee_GAN.pdf)
 - [GAN Lab](https://zhuanlan.zhihu.com/p/111904496): visualize how GAN network work.
 - [The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)
 - [A Mathematical Introduction to Generative Adversarial Nets](https://arxiv.org/abs/2009.00169)
 
-## 7. Machine learning on graphs--Graph Neural Network (GNN)
+## 6. Machine learning on graphs--Graph Neural Network (GNN)
 There is [blog](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN.
 
-## 8. Reinforcement learning
+## 7. Reinforcement learning
 - [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234)
 - [Easy-RL](https://datawhalechina.github.io/easy-rl/#/): A book written Hung-Yee Li.
 
