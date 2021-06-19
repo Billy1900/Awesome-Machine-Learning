@@ -29,8 +29,7 @@ There are three courses I recommend,
 - [CNN explainer](https://github.com/poloclub/cnn-explainer)
 - [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/): Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars.
 ### 5.1 GAN
-- [Introduction of Generative Adversarial Network (GAN) by Hung-yi Lee](http://speech.ee.ntu.edu.tw/~tlkagk/slide/Tutorial_HYLee_GAN.pdf)
-- [GAN Lab](https://zhuanlan.zhihu.com/p/111904496): visualize how GAN network work.
+- [GAN Lab](https://poloclub.github.io/ganlab/): visualize how GAN network work.
 - [The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)
 - [A Mathematical Introduction to Generative Adversarial Nets](https://arxiv.org/abs/2009.00169)
 
