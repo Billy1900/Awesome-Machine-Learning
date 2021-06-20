@@ -35,7 +35,6 @@
     + [U-Net](#u-net)
   * [5. Image Generation (GAN)](#5-image-generation--gan-)
 
-
 # Computer Vision
 Computer vision is a field of artificial intelligence that trains computers to interpret and understand the visual world. Machines can accurately identify and locate objects then react to what they “see” using digital images from cameras, videos, and deep learning models.
 
@@ -56,7 +55,6 @@ With **instance segmentation** different objects of the same class have differen
 ![img](1.png)
 
 **Distinguishing computer vision from Image processing**
-
 Image processing is focused on processing raw images to apply some kind of transformation. Usually, the goal is to improve images or prepare them as an input for a specific task, while in computer vision the goal is to describe and explain images. For instance, noise reduction, contrast, or rotation operations, typical components of image processing, can be performed at pixel level and do not need a complex grasp of the image that allows for some understanding of what is happening in it.
 
 Examples of image processing include:
@@ -84,6 +82,7 @@ Here is a [video](https://www.youtube.com/watch?v=Ilg3gGewQ5U) which could defin
 ### 1.3 Loss function
 #### 1.3.1 Mean Absolute Error/L1 Loss
 $M A E=\frac{\sum_{i=1}^{n}\left|y_{i}-\hat{y}_{i}\right|}{n}$
+
 Mean absolute error, on the other hand, is measured as the average of sum of absolute differences between predictions and actual observations. Like MSE, this as well measures the magnitude of error without considering their direction. Unlike MSE, MAE needs more complicated tools such as linear programming to compute the gradients. Plus MAE is more robust to outliers since it does not make use of square.
 
 Outliers are those data points which differs significantly from other observations present in given dataset. It can occur because of variability in measurement and due to misinterpretation in filling data points.
@@ -100,7 +99,7 @@ In simple terms, the score of correct category should be greater than sum of sco
 ![img](6.png)
 
 #### 1.3.4 Cross Entropy Loss/Negative Log Likelihood
-CrossEntropyLoss $=-\left(y_{i} \log \left(\hat{y}_{i}\right)+\left(1-y_{i}\right) \log \left(1-\hat{y}_{i}\right)\right)$
+$CrossEntropyLoss =-\left(y_{i} \log \left(\hat{y}_{i}\right)+\left(1-y_{i}\right) \log \left(1-\hat{y}_{i}\right)\right)$
 
 This is the most common setting for classification problems. Cross-entropy loss increases as the predicted probability diverges from the actual label.
 
@@ -111,7 +110,7 @@ Cross entropy has some advantages: Cross entropy loss penalizes heavily the pred
 
 **Gradient of squared error loss: 2-class scenario**
 
-First the predictions function is $y_i = \sigma(Wx_i + b)$, and loss function is $J = \frac{1}{2}\left(\hat{y}_{i}-y_{i}\right)^{2}$. We get the derivation of $J$: $\frac{d J}{d W} = \left(\hat{y}_{i}-y_{i}\right)\sigma'(Wx_i + b)x_i$, for function $\sigma'$: $\sigma^{\prime}\left(W x_{i}+b\right)=\sigma\left(W x_{i}+b\right)\left(1-\sigma\left(W x_{i}+b\right)\right)$. So, we could get: $\frac{d J}{d W}=\left(\hat{y}_{i}-y_{i}\right) \widehat{y_{i}}\left(1-\widehat{y_{i}}\right) x_{i}$.
+First the predictions function is $y_i = \sigma(Wx_i + b)$, and loss function is $J = \frac{1}{2}\left(\hat{y}_i-y_{i}\right)^{2}$. We get the derivation of $J: \frac{d J}{d W} = \left(\hat{y}_{i}-y_{i}\right)\sigma'(Wx_i + b)x_i$, for function $\sigma'$: $\sigma^{\prime}\left(W x_{i}+b\right)=\sigma\left(W x_{i}+b\right)\left(1-\sigma\left(W x_{i}+b\right)\right)$. So, we could get: $\frac{d J}{d W}=\left(\hat{y}_{i}-y_{i}\right) \widehat{y_{i}}\left(1-\widehat{y_{i}}\right) x_{i}$.
 
 It is obvious that When $\hat{y}$ is close to 0.0 or 1.0, $\hat{y}(1-\hat{y})$ is close to 0 which is not good for updating parameters.
 
@@ -119,8 +118,7 @@ It is obvious that When $\hat{y}$ is close to 0.0 or 1.0, $\hat{y}(1-\hat{y})$ i
 
 First the predictions function is $\widehat{y_{i}}=\sigma\left(x_{i}\right)=\sigma\left(W x_{i}+b\right)$, and loss function is $J=\sum_{i=1}^{n}\left[-y_{i} \log \left(\sigma\left(x_{i}\right)\right)-\left(1-y_{i}\right) \log \left(1-\sigma\left(x_{i}\right)\right)\right]$
 
-and we get the derivation of $J$:
-$\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} \log \left(\sigma\left(x_{i}\right)\right)-\left(1-y_{i}\right) \log \left(1-\sigma\left(x_{i}\right)\right)\right]$
+and we get the derivation of $J: \frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} \log \left(\sigma\left(x_{i}\right)\right)-\left(1-y_{i}\right) \log \left(1-\sigma\left(x_{i}\right)\right)\right]$
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} \frac{\sigma\left(x_{i}\right)\left(1-\sigma\left(x_{i}\right)\right) x_{i}}{\sigma\left(x_{i}\right)}+\left(1-y_{i}\right) \frac{\sigma\left(x_{i}\right)\left(1-\sigma\left(x_{i}\right)\right) x_{i}}{1-\sigma\left(x_{i}\right)}\right]$
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i}\left(1-\sigma\left(x_{i}\right)\right) x_{i}+\left(1-y_{i}\right) \sigma\left(x_{i}\right) x_{i}\right]$
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} x_{i}+y_{i} \sigma\left(x_{i}\right) x_{i}+\sigma\left(x_{i}\right) x_{i}-y_{i} \sigma\left(x_{i}\right) x_{i}\right]$
@@ -135,6 +133,7 @@ This [blog](https://www.kaggle.com/learn-forum/157623) will help you get a full 
 
 ### 1.5 Hyperparameter Tuning
 This is often referred to as "searching" the hyperparameter space for the optimum values. In the following visualization, the $x$ and $y$ dimensions represent two hyperparameters, and the $z$ dimension represents the model's score (defined by some evaluation metric) for the architecture defined by $x$ and $y$.
+
 <img src="7.png" width=400></img>
 
 When building such a model, two important hyperparameters to consider are:
@@ -145,15 +144,18 @@ When building such a model, two important hyperparameters to consider are:
 Grid search is arguably the most basic hyperparameter tuning method. With this technique, we simply build a model for each possible combination of all of the hyperparameter values provided, evaluating each model, and selecting the architecture which produces the best results.
 
 Each model would be fit to the training data and evaluated on the validation data. As you can see, this is an exhaustive sampling of the hyperparameter space and can be quite inefficient.
+
 <img src="8.gif" width=500></img>
 
 #### 1.5.2 Random Search
 Random search differs from grid search in that we longer provide a discrete set of values to explore for each hyperparameter; rather, we provide a statistical distribution for each hyperparameter from which values may be randomly sampled.
 
 In the following example, we're searching over a hyperparameter space where the one hyperparameter has significantly more influence on optimizing the model score - the distributions shown on each axis represent the model's score. In each case, we're evaluating nine different models. The grid search strategy blatantly misses the optimal model and spends redundant time exploring the unimportant parameter. During this grid search, we isolated each hyperparameter and searched for the best possible value while holding all other hyperparameters constant. For cases where the hyperparameter being studied has little effect on the resulting model score, this results in wasted effort. Conversely, the random search has much improved exploratory power and can focus on finding the optimal value for the important hyperparameter.
+
 <img src="9.png" width=500></img>
 
 As you can see, this search method works best under the assumption that not all hyperparameters are equally important. While this isn't always the case, the assumption holds true for most datasets.
+
 <img src="10.gif" width=500></img>
 
 #### 1.5.3 Bayesian optimization
@@ -162,6 +164,7 @@ The previous two methods performed individual experiments building models with v
 We'll initially define a model constructed with hyperparameters $\lambda$ which, after training, is scored $v$ according to some evaluation metric. Next, we use the previously evaluated hyperparameter values to compute a posterior expectation of the hyperparameter space. We can then choose the optimal hyperparameter values according to this posterior expectation as our next model candidate. We iteratively repeat this process until converging to an optimum.
 
 We'll use a Gaussian process to model our prior probability of model scores across the hyperparameter space. This model will essentially serve to use the hyperparameter values $λ_{1,...i}$ and corresponding scores $v_{1,...i}$ we've observed thus far to approximate a continuous score function over the hyperparameter space. This approximated function also includes the degree of certainty of our estimate, which we can use to identify the candidate hyperparameter values that would yield the largest expected improvement over the current score. The formulation for expected improvemenet is known as our acquisition function, which represents the posterior distribution of our score function across the hyperparameter space.
+
 <img src="11.gif" width=500></img>
 
 ### 1.6 CNN Architectures
@@ -242,21 +245,26 @@ def sobel_filters(img):
     
     return (G, theta)
 ```
+
 <img src="13.png"></img>
+
 The result is almost the expected one, but we can see that some of the edges are thick and others are thin. Non-Max Suppression step will help us mitigate the thick ones.
 
 ### 2.5 Step 5-Non-Maximum Suppression
 Ideally, the final image should have thin edges. Thus, we must perform non-maximum suppression to thin out the edges. The principle is simple: the algorithm goes through all the points on the gradient intensity matrix and finds the pixels with the maximum value in the edge directions.
 
 Let’s take an easy example:
+
 <img src="14.png"></img>
 
 The upper left corner red box present on the above image, represents an intensity pixel of the Gradient Intensity matrix being processed. The corresponding edge direction is represented by the orange arrow with an angle of -pi radians (+/-180 degrees).
+
 <img src="15.png"></img>
 
 The edge direction is the orange dotted line (horizontal from left to right). The purpose of the algorithm is to check if the pixels on the same direction are more or less intense than the ones being processed. In the example above, the pixel $(i, j)$ is being processed, and the pixels on the same direction are highlighted in blue $(i, j-1)$ and $(i, j+1)$. If one those two pixels are more intense than the one being processed, then only the more intense one is kept. Pixel $(i, j-1)$ seems to be more intense, because it is white (value of 255). Hence, the intensity value of the current pixel $(i, j)$ is set to 0. If there are no pixels in the edge direction having more intense values, then the value of the current pixel is kept.
 
 Let’s now focus on another example:
+
 <img src="16.png"></img>
 
 In this case the direction is the orange dotted diagonal line. Therefore, the most intense pixel in this direction is the pixel $(i-1, j+1)$.
@@ -308,6 +316,7 @@ def non_max_suppression(img, D):
     return Z
 ```
 The result is the same image with thinner edges. We can however still notice some variation regarding the edges’ intensity: some pixels seem to be brighter than others, and we will try to cover this shortcoming with the two final steps.
+
 <img src="17.png" width=600></img>
 
 ### 2.6 Step 6-Double Threshold
@@ -343,6 +352,7 @@ def threshold(img, lowThresholdRatio=0.05, highThresholdRatio=0.09):
     return (res, weak, strong)
 ```
 The result of this step is an image with only 2 pixel intensity values (strong and weak):
+
 <img src="18.png" width=600></img>
 
 ## 3. Object detection
@@ -384,6 +394,7 @@ The Mask R-CNN authors at Facebook AI Research (FAIR) extended Faster R-CNN to p
 The first stage (region proposal) of Mask R-CNN is identical to its predecessor, while in the second stage it outputs a binary mask for each RoI in parallel to the class and bounding box. This binary mask denotes whether the pixel is part of any object, without concern for the categories. The class for the pixels would be assigned simply by the bounding box that they reside in, which makes the model a lot easier to train.
 
 Another difference in the second stage is that the RoI pooling layer (RoIPool) introduced in Fast R-CNN is replaced with RoIAlign. Performing instance segmentation with RoIPool results in many pixel-wise inaccuracies, i.e. misaligned feature map when compared to the original image. This occurs because RoIPool performs quantization of the regions of interest, which includes rounding the floating-point values to decimal values in the resulting feature map. On the other hand, the improved RoIAlign properly aligns the extracted features with the input, by avoiding any quantization altogether, rather using bilinear interpolation to compute the exact values of the input features.
+
 <img src="22.png"></img>
 
 ### 3.2 YOLO model family
@@ -423,6 +434,7 @@ Segmentation models are useful for a variety of tasks, including:
 H. Noh et al. (2015) have released an end-to-end model composed of two linked parts. The first part is a convolutional network with a VGG16 architecture. It takes as input an instance proposal, for example a bounding box generated by an object detection model. The proposal is processed and transformed by a convolutional network to generate a vector of features. 
 
 The second part is a deconvolutional network taking the vector of features as input and generating a map of pixel-wise probabilities belonging to each class. The deconvolutional network uses unpooling targeting the maxium activations to keep the location of the information in the maps. The second network also uses deconvolution associating a single input to multiple feature maps. The deconvolution expands feature maps while keeping the information dense.
+
 <img src="25.png"></img>
 
 The authors have analysed deconvolution feature maps and they have noted that the low-level ones are specific to the shape while the higher-level ones help to classify the proposal. Finally, when all the proposals of an image are processed by the entire network, the maps are concatenated to obtain the fully segmented image. This network has obtained a 72.5% mIoU on the 2012 PASCAL VOC segmentation challenge.
@@ -442,5 +454,9 @@ More details are written in this [blog.](https://nanonets.com/blog/semantic-imag
 Generative Adversarial Networks are a powerful class of neural networks with remarkable applications. They essentially consist of a system of two neural networks — the Generator and the Discriminator — dueling each other. Here [GAN lab](https://poloclub.github.io/ganlab/) is its visulization.
 
 Here’s the map of the GAN landscape:
+
 <img src="28.png"></img>
+
 This [blog](https://blog.floydhub.com/gans-story-so-far/) will give you a full overview of GAN. [Curated list of awesome GAN applications and demonstrations](https://github.com/nashory/gans-awesome-applications) and [GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo) are listed here.
+
+
