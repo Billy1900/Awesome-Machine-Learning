@@ -433,8 +433,8 @@ U-Net proposes a new approach to solve this information loss problem. It propose
 More details are written in this [blog.](https://nanonets.com/blog/semantic-image-segmentation-2020/) And [Pytorch-semseg](https://github.com/meetps/pytorch-semseg) aims at mirroring popular semantic segmentation architectures in PyTorch. Additionally, here is [a full list](https://github.com/mrgloom/awesome-semantic-segmentation) of semantic segmentation.
 
 ## 5. Image Generation (GAN)
-Generative Adversarial Networks are a powerful class of neural networks with remarkable applications. They essentially consist of a system of two neural networks — the Generator and the Discriminator — dueling each other.
+Generative Adversarial Networks are a powerful class of neural networks with remarkable applications. They essentially consist of a system of two neural networks — the Generator and the Discriminator — dueling each other. Here [GAN lab](https://poloclub.github.io/ganlab/) is its visulization.
 
 Here’s the map of the GAN landscape:
 <img src="28.png"></img>
-This [blog](https://blog.floydhub.com/gans-story-so-far/) will give you a full overview of GAN. [Curated list of awesome GAN applications and demonstrations](https://github.com/nashory/gans-awesome-applications) are listed here.
+This [blog](https://blog.floydhub.com/gans-story-so-far/) will give you a full overview of GAN. [Curated list of awesome GAN applications and demonstrations](https://github.com/nashory/gans-awesome-applications) and [GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo) are listed here.
