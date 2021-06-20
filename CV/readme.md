@@ -56,6 +56,7 @@ With **instance segmentation** different objects of the same class have differen
 ![img](1.png)
 
 **Distinguishing computer vision from Image processing**
+
 Image processing is focused on processing raw images to apply some kind of transformation. Usually, the goal is to improve images or prepare them as an input for a specific task, while in computer vision the goal is to describe and explain images. For instance, noise reduction, contrast, or rotation operations, typical components of image processing, can be performed at pixel level and do not need a complex grasp of the image that allows for some understanding of what is happening in it.
 
 Examples of image processing include:
@@ -89,15 +90,18 @@ Outliers are those data points which differs significantly from other observatio
 
 #### 1.3.2 Mean Square Error/Quadratic Loss/L2 Loss
 $M S E=\frac{\sum_{i=1}^{n}\left(y_{i}-\hat{y}_{i}\right)^{2}}{n}$
+
 As the name suggests, Mean square error is measured as the average of squared difference between predictions and actual observations. It’s only concerned with the average magnitude of error irrespective of their direction. However, due to squaring, predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions. Plus MSE has nice mathematical properties which makes it easier to calculate gradients.
 
 #### 1.3.3 Hinge Loss
 $SVMLoss =\sum_{j \neq y_{i}} \max \left(0, s_{j}-s_{y_{i}}+1\right)$
+
 In simple terms, the score of correct category should be greater than sum of scores of all incorrect categories by some safety margin (usually one). And hence hinge loss is used for maximum-margin classification (like the figure below, to maximize the delta.), most notably for support vector machines. Although not differentiable, it’s a convex function which makes it easy to work with usual convex optimizers used in machine learning domain.
 ![img](6.png)
 
 #### 1.3.4 Cross Entropy Loss/Negative Log Likelihood
 CrossEntropyLoss $=-\left(y_{i} \log \left(\hat{y}_{i}\right)+\left(1-y_{i}\right) \log \left(1-\hat{y}_{i}\right)\right)$
+
 This is the most common setting for classification problems. Cross-entropy loss increases as the predicted probability diverges from the actual label.
 
 Notice that when actual label is 1 (y(i) = 1), second half of function disappears whereas in case actual label is 0 (y(i) = 0) first half is dropped off. In short, we are just multiplying the log of the actual predicted probability for the ground truth class. An important aspect of this is that cross entropy loss penalizes heavily the predictions that are confident but wrong.
@@ -106,11 +110,13 @@ Notice that when actual label is 1 (y(i) = 1), second half of function disappear
 Cross entropy has some advantages: Cross entropy loss penalizes heavily the predictions that are confident but wrong. However, for squared loss, it has $\hat{y}(1-\hat{y})$ in its gradient term. When $\hat{y}$ is close to 0.0 or 1.0, the speed of update becomes very slow.
 
 **Gradient of squared error loss: 2-class scenario**
+
 First the predictions function is $y_i = \sigma(Wx_i + b)$, and loss function is $J = \frac{1}{2}\left(\hat{y}_{i}-y_{i}\right)^{2}$. We get the derivation of $J$: $\frac{d J}{d W} = \left(\hat{y}_{i}-y_{i}\right)\sigma'(Wx_i + b)x_i$, for function $\sigma'$: $\sigma^{\prime}\left(W x_{i}+b\right)=\sigma\left(W x_{i}+b\right)\left(1-\sigma\left(W x_{i}+b\right)\right)$. So, we could get: $\frac{d J}{d W}=\left(\hat{y}_{i}-y_{i}\right) \widehat{y_{i}}\left(1-\widehat{y_{i}}\right) x_{i}$.
 
 It is obvious that When $\hat{y}$ is close to 0.0 or 1.0, $\hat{y}(1-\hat{y})$ is close to 0 which is not good for updating parameters.
 
 **Gradient of cross entropy loss: 2-class scenario**
+
 First the predictions function is $\widehat{y_{i}}=\sigma\left(x_{i}\right)=\sigma\left(W x_{i}+b\right)$, and loss function is $J=\sum_{i=1}^{n}\left[-y_{i} \log \left(\sigma\left(x_{i}\right)\right)-\left(1-y_{i}\right) \log \left(1-\sigma\left(x_{i}\right)\right)\right]$
 
 and we get the derivation of $J$:
