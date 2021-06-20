@@ -26,12 +26,7 @@ There are three courses I recommend,
 - [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/): Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks.
 
 ## 5. CV
-- [CNN explainer](https://github.com/poloclub/cnn-explainer)
-- [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/): Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars.
-### 5.1 GAN
-- [GAN Lab](https://poloclub.github.io/ganlab/): visualize how GAN network work.
-- [The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)
-- [A Mathematical Introduction to Generative Adversarial Nets](https://arxiv.org/abs/2009.00169)
+Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. First, I write [a whole overview](CV/readme.md) of Computer Vision, simple but comprehensive. For visual explanation, [CNN explainer](https://github.com/poloclub/cnn-explainer) is a good work to tell you the function of different layers. And courses I have learned, [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) is an excellent course from Standford, all free.
 
 ## 6. Machine learning on graphs--Graph Neural Network (GNN)
 There is [blog](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN.
