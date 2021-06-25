@@ -1,3 +1,5 @@
+First, you need to install this extension ([Github Math Display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda/related)) in your chrome in ordrer to read latex.
+
 - [Computer Vision](#computer-vision)
   * [1. Neural Network](#1-neural-network)
     + [1.1 Forward Propogation](#11-forward-propogation)
