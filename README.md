@@ -44,3 +44,9 @@ Besides, there are some websites you could learn programming related to RL.
 [![](https://res.cloudinary.com/marcomontalbano/image/upload/v1609914917/video_to_markdown/images/youtube--4hoLGtnK_3U-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/4hoLGtnK_3U "")
 
 If you still want to dive deeper into RL, this book [Reinforcement learning: an introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) could help you get a good theoretical understanding of RL and its [code implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction).
+
+## 8. Conference
+- NLP: ACL, EMNLP, NAACL, Coling, TACL
+- DM: KDD, WSDM, SIGIR, WWW, CIKM
+- ML: NIPS, ICML, ICLR, AISTATS, UAI, JMLR, PAMI
+- AI: AAAI, IJCAI
