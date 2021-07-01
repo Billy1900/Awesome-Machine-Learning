@@ -237,11 +237,11 @@ The Gradient calculation step detects the edge intensity and direction by calcul
 
 Edges correspond to a change of pixels’ intensity. To detect it, the easiest way is to apply filters that highlight this intensity change in both directions: horizontal (x) and vertical (y).
 
-When the image is smoothed, the derivatives $I_x$ and $I_y$ w.r.t. x and y are calculated. It can be implemented by convolving I with Sobel kernels Kx and Ky, respectively:
+When the image is smoothed, the derivatives $I_x$ and $I_y$ w.r.t. x and y are calculated. It can be implemented by convolving I with Sobel kernels $K_x$ and $K_y$, respectively:
 $K_{x}=\left(\begin{array}{ccc}-1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1\end{array}\right), K_{y}=\left(\begin{array}{ccc}1 & 2 & 1 \\ 0 & 0 & 0 \\ -1 & -2 & -1\end{array}\right)$
 
 Then, the magnitude G and the slope θ of the gradient are calculated as follow:
-$\begin{aligned}|G| &=\sqrt{I_{x}^{2}+I_{y}^{2}} \\ \theta(x, y) &=\arctan \left(\frac{I_{y}}{I_{x}}\right) \end{aligned}$
+$\begin{aligned}|G| &=\sqrt{I_{x}^{2}+I_{y}^{2}}, \theta(x, y) &=\arctan \left(\frac{I_{y}}{I_{x}}\right) \end{aligned}$
 
 Below is how the Sobel filters are applied to the image, and how to get both intensity and edge direction matrices:
 ```python
@@ -263,7 +263,7 @@ def sobel_filters(img):
 
 <img src="13.png"></img>
 
-The result is almost the expected one, but we can see that some of the edges are thick and others are thin. Non-Max Suppression step will help us mitigate the thick ones.
+The result (left-original, right-gradient calculation) is almost the expected one, but we can see that some of the edges are thick and others are thin. Non-Max Suppression step will help us mitigate the thick ones.
 
 ### 2.5 Step 5-Non-Maximum Suppression
 Ideally, the final image should have thin edges. Thus, we must perform non-maximum suppression to thin out the edges. The principle is simple: the algorithm goes through all the points on the gradient intensity matrix and finds the pixels with the maximum value in the edge directions.
