@@ -229,7 +229,7 @@ def gaussian_kernel(size, sigma=1):
     g =  np.exp(-((x**2 + y**2) / (2.0*sigma**2))) * normal
     return g
 ```
-After applying the Gaussian blur, we get the following result:
+After applying the Gaussian blur, we get the following result: (left-orifinal, right-denoised)
 <img src="12.png" width=600></img>
 
 ### 2.4 Step 4-Gradient calculation
@@ -237,7 +237,7 @@ The Gradient calculation step detects the edge intensity and direction by calcul
 
 Edges correspond to a change of pixels’ intensity. To detect it, the easiest way is to apply filters that highlight this intensity change in both directions: horizontal (x) and vertical (y).
 
-When the image is smoothed, the derivatives Ix and Iy w.r.t. x and y are calculated. It can be implemented by convolving I with Sobel kernels Kx and Ky, respectively:
+When the image is smoothed, the derivatives $I_x$ and $I_y$ w.r.t. x and y are calculated. It can be implemented by convolving I with Sobel kernels Kx and Ky, respectively:
 $K_{x}=\left(\begin{array}{ccc}-1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1\end{array}\right), K_{y}=\left(\begin{array}{ccc}1 & 2 & 1 \\ 0 & 0 & 0 \\ -1 & -2 & -1\end{array}\right)$
 
 Then, the magnitude G and the slope θ of the gradient are calculated as follow:
