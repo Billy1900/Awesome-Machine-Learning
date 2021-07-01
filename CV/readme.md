@@ -176,6 +176,15 @@ We'll use a Gaussian process to model our prior probability of model scores acro
 ### 1.6 CNN Architectures
 This [blog](https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d) will give you overview of CNN architecture such as LeNet-5, AlexNet, VGG-16, Inception-v1, Inception-v3, ResNet-50, Xception, Inception-v4, Inception-ResNets, ResNeXt-50.
 
+Moreover, the simplest convolutional network block can be illustrated as below:
+
+<img src="30.png" width=500></img>
+
+The feature extraction performed by the base consists of three basic operations:
+- Convolution: Filter an image for a particular feature 
+- ReLU: Detect that feature within the filtered image 
+- Pooling: Condense the image to enhance the features 
+
 ### 1.7 Attention
 In the context of machine learning, attention is a technique that mimics cognitive attention, defined as the ability to choose and concentrate on relevant stimuli. In other words, attention is a method that tries to enhance the important parts while fading out the non-relevant information.
 
