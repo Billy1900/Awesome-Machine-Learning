@@ -121,9 +121,13 @@ It is obvious that When $\hat{y}$ is close to 0.0 or 1.0, $\hat{y}(1-\hat{y})$ i
 First the predictions function is $\widehat{y_{i}}=\sigma\left(x_{i}\right)=\sigma\left(W x_{i}+b\right)$, and loss function is $J=\sum_{i=1}^{n}\left[-y_{i} \log \left(\sigma\left(x_{i}\right)\right)-\left(1-y_{i}\right) \log \left(1-\sigma\left(x_{i}\right)\right)\right]$
 
 and we get the derivation of $J: \frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} \log \left(\sigma\left(x_{i}\right)\right)-\left(1-y_{i}\right) \log \left(1-\sigma\left(x_{i}\right)\right)\right]$
+
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} \frac{\sigma\left(x_{i}\right)\left(1-\sigma\left(x_{i}\right)\right) x_{i}}{\sigma\left(x_{i}\right)}+\left(1-y_{i}\right) \frac{\sigma\left(x_{i}\right)\left(1-\sigma\left(x_{i}\right)\right) x_{i}}{1-\sigma\left(x_{i}\right)}\right]$
+
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i}\left(1-\sigma\left(x_{i}\right)\right) x_{i}+\left(1-y_{i}\right) \sigma\left(x_{i}\right) x_{i}\right]$
+
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[-y_{i} x_{i}+y_{i} \sigma\left(x_{i}\right) x_{i}+\sigma\left(x_{i}\right) x_{i}-y_{i} \sigma\left(x_{i}\right) x_{i}\right]$
+
 $\frac{d J}{d W}=\sum_{i=1}^{n}\left[\left(\sigma\left(x_{i}\right)-y_{i}\right) x_{i}\right]=\sum_{i=1}^{n}\left(\widehat{y_{i}}-y_{i}\right) x_{i}$
 
 We could easily see that the problem mentioned above is avoided.
