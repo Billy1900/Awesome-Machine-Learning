@@ -23,7 +23,7 @@ There are three courses I recommend,
 - [CS246: Mining Massive Data Sets](http://web.stanford.edu/class/cs246/): The course will discuss data mining and machine learning algorithms for analyzing very large amounts of data. The emphasis will be on MapReduce and Spark as tools for creating parallel algorithms that can process very large amounts of data.
 
 ## 4. NLP
-- [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/): Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks.
+Natural language processing (NLP) is the intersection of computer science, linguistics and machine learning. The field focuses on communication between computers and humans in natural language and NLP is all about making computers understand and generate human language. I write a [simple overview of NLP](NLP/NLP.md). For courses, [CS224n: Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/) is a good choice, free and comprehensive.
 
 ## 5. CV
 Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. First, I write [a whole overview](CV/readme.md) of Computer Vision, simple but comprehensive. For visual explanation, [CNN explainer](https://github.com/poloclub/cnn-explainer) is a good work to tell you the function of different layers. And courses I have learned, [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) is an excellent course from Standford, all free.
