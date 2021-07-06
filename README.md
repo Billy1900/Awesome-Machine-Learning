@@ -29,7 +29,7 @@ Natural language processing (NLP) is the intersection of computer science, lingu
 Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. First, I write [a whole overview](CV/readme.md) of Computer Vision, simple but comprehensive. For visual explanation, [CNN explainer](https://github.com/poloclub/cnn-explainer) is a good work to tell you the function of different layers. And courses I have learned, [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) is an excellent course from Standford, all free.
 
 ## 6. Machine learning on graphs--Graph Neural Network (GNN)
-There is [blog](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN.
+Recently, Graph Neural Network (GNN) has gained increasing popularity in various domains, including social network, knowledge graph, recommender system, and even life science. The power of GNN in modeling the dependencies between nodes in a graph enables the breakthrough in the research area related to graph analysis. This article aims to introduce the basics of Graph Neural Network and two more advanced algorithms, DeepWalk and GraphSage. There is a [Blog GNN-Learning](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN deeply.
 
 ## 7. Reinforcement learning
 - [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234)
