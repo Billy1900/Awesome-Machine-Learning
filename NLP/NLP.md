@@ -1,3 +1,4 @@
+First, you need to install this extension [Github Math Display](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda/related) in your chrome in ordrer to read latex.
 - [0. Introduction](#0-introduction)
   * [0.1 Why is NLP difficult?](#01-why-is-nlp-difficult-)
   * [0.2 Techniques](#02-techniques)
