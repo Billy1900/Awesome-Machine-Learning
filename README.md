@@ -32,18 +32,7 @@ Computer Vision has become ubiquitous in our society, with applications in searc
 Recently, Graph Neural Network (GNN) has gained increasing popularity in various domains, including social network, knowledge graph, recommender system, and even life science. The power of GNN in modeling the dependencies between nodes in a graph enables the breakthrough in the research area related to graph analysis. This article aims to introduce the basics of Graph Neural Network and two more advanced algorithms, DeepWalk and GraphSage. There is a [Blog GNN-Learning](https://github.com/Billy1900/GNN-Learning-and-Integration) which might help you get into GNN deeply.
 
 ## 7. Reinforcement learning
-- [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234)
-- [Easy-RL](https://datawhalechina.github.io/easy-rl/#/): A book written Hung-Yee Li.
-
-Besides, there are some websites you could learn programming related to RL.
-- [Gym](https://gym.openai.com/): Gym is a toolkit for developing and comparing reinforcement learning algorithms. 
-- [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
-- [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/): The game of Pong is an excellent example of a simple RL task.
-![image](http://karpathy.github.io/assets/rl/pong.gif)
-- [Using Keras and Deep Deterministic Policy Gradient to play TORCS](https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html): we will demonstrate how to use the Deep Deterministic Policy Gradient algorithm (DDPG) with Keras together to play TORCS (The Open Racing Car Simulator), a very interesting AI racing game and research platform.
-[![](https://res.cloudinary.com/marcomontalbano/image/upload/v1609914917/video_to_markdown/images/youtube--4hoLGtnK_3U-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/4hoLGtnK_3U "")
-
-If you still want to dive deeper into RL, this book [Reinforcement learning: an introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf) could help you get a good theoretical understanding of RL and its [code implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction).
+Deep reinforcement learning is about taking the best actions from what we see and hear. Unfortunately, reinforcement learning RL has a high barrier in learning the concepts and the lingos. In this article, we will cover deep RL with an overview of the general landscape. Yet, we will not shy away from equations and lingos. They provide the basics in understanding the concepts deeper. Here I write [a short blog](RL/readme.md) which takes you into the RL area and provide some excellent learning materials which definitely will help you.
 
 ## 8. Conference
 - NLP: ACL, EMNLP, NAACL, Coling, TACL
