@@ -39,3 +39,6 @@ Deep reinforcement learning is about taking the best actions from what we see an
 - DM: KDD, WSDM, SIGIR, WWW, CIKM
 - ML: NIPS, ICML, ICLR, AISTATS, UAI, JMLR, PAMI
 - AI: AAAI, IJCAI
+
+## Supplementary resources
+- [numpy-ml](https://github.com/ddbourgin/numpy-ml): numpy-ml is a growing collection of machine learning models, algorithms, and tools written exclusively in NumPy and the Python standard library. The purpose of the project is to provide reference implementations of common machine learning components for rapid prototyping and experimentation. With that in mind, don’t just read the docs – read the source!
