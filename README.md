@@ -47,6 +47,33 @@ Machine learning could be divieded into two parts: data and model. For processin
 
 <img src="1.png"></img>
 
+And I give the template I usually use
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+
+sns.style(‘white’)
+
+font = {'family': 'Times New Roman',
+         'color':  'red',
+         'weight': 'normal',
+         'size': 16,
+}
+
+Fig, ax = plt.subplots()
+Ax.plot(x=,y=, label='', marker='')
+Ax.set_xlabel(‘$name$’, fondict=font)
+Ax.set_ylabel(‘$name$’, fondict=font)
+Ax.legend(loc='')
+
+ax.set_xlim(min(x), max(x))
+ax.set_ylim(min(y), max(y))
+
+plt.show()
+```
+
 ## Supplementary resources
 - [numpy-ml](https://github.com/ddbourgin/numpy-ml): numpy-ml is a growing collection of machine learning models, algorithms, and tools written exclusively in NumPy and the Python standard library. The purpose of the project is to provide reference implementations of common machine learning components for rapid prototyping and experimentation. With that in mind, don’t just read the docs – read the source!
 - [Interpretable Machine Learning](https://github.com/Billy1900/Awesome-Machine-Learning/edit/main/README.md): A Guide for Making Black Box Models Explainable.
