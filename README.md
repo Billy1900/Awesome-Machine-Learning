@@ -40,6 +40,13 @@ Deep reinforcement learning is about taking the best actions from what we see an
 - ML: NIPS, ICML, ICLR, AISTATS, UAI, JMLR, PAMI
 - AI: AAAI, IJCAI
 
+## 9. Fundamental Tool
+Machine learning could be divieded into two parts: data and model. For processing data, we usually use pandas (data processor) and here is the [pandas tutorial authorized by Datawhale](http://joyfulpandas.datawhale.club/). Moreover, it is common that we need visulize our results, that's why matplotlib comes out. The show type of data visulization include Trends, relationship and distribution as shown following.
+
+<img src="2.png"></img>
+
+<img src="1.png"></img>
+
 ## Supplementary resources
 - [numpy-ml](https://github.com/ddbourgin/numpy-ml): numpy-ml is a growing collection of machine learning models, algorithms, and tools written exclusively in NumPy and the Python standard library. The purpose of the project is to provide reference implementations of common machine learning components for rapid prototyping and experimentation. With that in mind, don’t just read the docs – read the source!
 - [Interpretable Machine Learning](https://github.com/Billy1900/Awesome-Machine-Learning/edit/main/README.md): A Guide for Making Black Box Models Explainable.
