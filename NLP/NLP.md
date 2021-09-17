@@ -638,6 +638,7 @@ here are some materials:
 - TextBlob (https://github.com/sloria/TextBlob)
 - [NLTK](https://github.com/nltk/nltk) Natural Language Toolkit is a Python library which is mainly used in research and education. It includes many steps in the pipeline with models which are ready to test and use.
 - [CoreNLP](https://github.com/stanfordnlp/CoreNLP) is another Python library which provides a wide range of tools for understanding natural language.
+- [nlp-tutorial](https://github.com/graykode/nlp-tutorial): nlp-tutorial is a tutorial for who is studying NLP(Natural Language Processing) using Pytorch. Most of the models in NLP were implemented with less than 100 lines of code.(except comments or blank lines)
 
 # 6. Research Survey
 - [Natural Language Processing Advancements By Deep Learning: A Survey](https://arxiv.org/abs/2003.01200)
