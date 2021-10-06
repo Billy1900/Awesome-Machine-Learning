@@ -79,3 +79,4 @@ plt.show()
 - [Interpretable Machine Learning](https://github.com/Billy1900/Awesome-Machine-Learning/edit/main/README.md): A Guide for Making Black Box Models Explainable.
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): Minimal and clean examples of machine learning algorithms implementations.
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning): A curated list of awesome machine learning frameworks, libraries and software (by language).
+- [Simple Computer](https://github.com/djhworld/simple-computer): Starting from NAND gates, and moving up through to registers, RAM, the ALU, the control unit and adding I/O support, I eventually ended up with a fully functional machine. For a write up about this project, see [blog post](https://djharper.dev/post/2019/05/21/i-dont-know-how-cpus-work-so-i-simulated-one-in-code/) about it here
