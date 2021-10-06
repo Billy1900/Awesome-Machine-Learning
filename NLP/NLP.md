@@ -632,6 +632,7 @@ here are some materials:
 - [Learn how to Build and Deploy a Chatbot in Minutes using Rasa (IPL Case Study!)](https://www.analyticsvidhya.com/blog/2019/04/learn-build-chatbot-rasa-nlp-ipl/?utm_source=blog&utm_medium=TopApplicationsofNLP)
 
 # 5. Library
+- [HanLP: Han Language Processing](https://github.com/hankcs/HanLP): The multilingual NLP library for researchers and companies, built on PyTorch and TensorFlow 2.x, for advancing state-of-the-art deep learning techniques in both academia and industry. 
 - [SpaCy](https://github.com/explosion/spaCy) is yet another Python library which employs machine learning and deep learning to help you with a lot of powerful feature. 
 - [Gensim](https://github.com/RaRe-Technologies/gensim): Gensim is a Python library for topic modelling, document indexing and similarity retrieval with large corpora which depends on Numpy and Scipy.
 - [AllenNLP](https://github.com/allenai/allennlp): An open-source NLP research library, built on PyTorch.
