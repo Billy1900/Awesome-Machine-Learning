@@ -635,8 +635,9 @@ here are some materials:
 - [HanLP: Han Language Processing](https://github.com/hankcs/HanLP): The multilingual NLP library for researchers and companies, built on PyTorch and TensorFlow 2.x, for advancing state-of-the-art deep learning techniques in both academia and industry. 
 - [SpaCy](https://github.com/explosion/spaCy) is yet another Python library which employs machine learning and deep learning to help you with a lot of powerful feature. 
 - [Gensim](https://github.com/RaRe-Technologies/gensim): Gensim is a Python library for topic modelling, document indexing and similarity retrieval with large corpora which depends on Numpy and Scipy.
+- [PyTorch-NLP](https://github.com/PetrochukM/PyTorch-NLP): Basic Utilities for PyTorch Natural Language Processing (NLP).
 - [AllenNLP](https://github.com/allenai/allennlp): An open-source NLP research library, built on PyTorch.
-- TextBlob (https://github.com/sloria/TextBlob)
+- [TextBlob](https://github.com/sloria/TextBlob)
 - [NLTK](https://github.com/nltk/nltk) Natural Language Toolkit is a Python library which is mainly used in research and education. It includes many steps in the pipeline with models which are ready to test and use.
 - [CoreNLP](https://github.com/stanfordnlp/CoreNLP) is another Python library which provides a wide range of tools for understanding natural language.
 - [nlp-tutorial](https://github.com/graykode/nlp-tutorial): nlp-tutorial is a tutorial for who is studying NLP(Natural Language Processing) using Pytorch. Most of the models in NLP were implemented with less than 100 lines of code.(except comments or blank lines)
