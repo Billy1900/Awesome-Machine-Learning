@@ -81,3 +81,5 @@ plt.show()
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning): A curated list of awesome machine learning frameworks, libraries and software (by language).
 - [Surprise](https://github.com/NicolasHug/Surprise) is a Python scikit for building and analyzing recommender systems that deal with explicit rating data.
 - [Recommenders](https://github.com/microsoft/recommenders): This repository contains examples and best practices for building recommendation systems, provided as Jupyter notebooks. The examples detail our learnings on five key tasks:
+- [Real-Time Voice Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning): SV2TTS is a three-stage deep learning framework that allows to create a numerical representation of a voice from a few seconds of audio, and to use it to condition a text-to-speech model trained to generalize to new voices.
+- [DouZero_For_Happy_DouDiZhu](https://github.com/tianqiraf/DouZero_For_HappyDouDiZhu): RL used in game Doudizhu.
