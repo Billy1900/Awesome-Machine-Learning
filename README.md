@@ -80,3 +80,4 @@ plt.show()
 - [Machine learning algorithms](https://github.com/rushter/MLAlgorithms): Minimal and clean examples of machine learning algorithms implementations.
 - [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning): A curated list of awesome machine learning frameworks, libraries and software (by language).
 - [Surprise](https://github.com/NicolasHug/Surprise) is a Python scikit for building and analyzing recommender systems that deal with explicit rating data.
+- [Recommenders](https://github.com/microsoft/recommenders): This repository contains examples and best practices for building recommendation systems, provided as Jupyter notebooks. The examples detail our learnings on five key tasks:
