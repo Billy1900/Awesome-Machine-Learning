@@ -41,7 +41,7 @@ Deep reinforcement learning is about taking the best actions from what we see an
 - AI: AAAI, IJCAI
 
 ## 9. Fundamental Tool
-Machine learning could be divieded into two parts: data and model. For processing data, we usually use pandas (data processor) and here is the [pandas tutorial authorized by Datawhale](http://joyfulpandas.datawhale.club/). Moreover, it is common that we need visulize our results, that's why matplotlib comes out. The show type of data visulization include Trends, relationship and distribution as shown following.
+Machine learning could be divieded into two parts: data and model. For processing data, we usually use pandas (data processor) and here is the [pandas tutorial authorized by Datawhale](http://joyfulpandas.datawhale.club/). Moreover, it is common that we need to visulize our results, that's why [matplotlib](https://matplotlib.org/) comes out. The show type of data visulization include Trends, relationship and distribution as shown following. Besides, [Dash](https://plotly.com/) is the open-source standard for analytic apps in Python.
 
 <img src="2.png"></img>
 
