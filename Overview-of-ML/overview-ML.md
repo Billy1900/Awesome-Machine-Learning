@@ -8,7 +8,12 @@ There are many approaches that can be taken when conducting Machine Learning. Th
 The No Free Lunch theorem is famous in Machine Learning. It states that there is no single algorithm that will work well for all tasks. Each task that you try to solve has it’s own idiosyncrasies. Therefore, there are lots of algorithms and approaches to suit each problems individual quirks. Plenty more styles of Machine Learning and AI will keep being introduced that best fit different problems.
 
 Before we go, here is a picture which could illustrate what is the Machine learning made up.
-![image](over-ml.png)
+
+<img src="over-ml.png" width=500></img>
+
+Besides, rencently I found a more comprehensive one:
+
+<img src="All_ML.png" width=800></img>
 
 ## 1. Supervised Learning
 In supervised learning, the goal is to learn the mapping (the rules) between a set of inputs and outputs. For example, the inputs could be the weather forecast, and the outputs would be the visitors to the beach. The goal in supervised learning would be to learn the mapping that describes the relationship between temperature and number of beach visitors.
