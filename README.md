@@ -55,7 +55,7 @@ import numpy as np
 import seaborn as sns
 
 def plot_x_y(x_axis, y_axis):
-    sns.style('white')
+    sns.set_theme()
 
     font = {'family': 'Times New Roman',
             'color': 'red',
