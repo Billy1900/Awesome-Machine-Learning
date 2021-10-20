@@ -54,24 +54,25 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-sns.style(‘white’)
+def plot_x_y(x_axis, y_axis):
+    sns.style('white')
 
-font = {'family': 'Times New Roman',
-         'color':  'red',
-         'weight': 'normal',
-         'size': 16,
-}
+    font = {'family': 'Times New Roman',
+            'color': 'red',
+            'weight': 'normal',
+            'size': 16,
+            }
 
-Fig, ax = plt.subplots()
-Ax.plot(x=,y=, label='', marker='')
-Ax.set_xlabel(‘$name$’, fondict=font)
-Ax.set_ylabel(‘$name$’, fondict=font)
-Ax.legend(loc='')
+    Fig, ax = plt.subplots()
+    ax.plot(x=x_axis, y=y_axis, label='loss', marker='*')
+    ax.set_xlabel('leaf nodes', fondict=font)
+    ax.set_ylabel('loss', fondict=font)
+    ax.legend(loc='best')
 
-ax.set_xlim(min(x), max(x))
-ax.set_ylim(min(y), max(y))
+    ax.set_xlim(min(x), max(x))
+    ax.set_ylim(min(y), max(y))
 
-plt.show()
+    plt.show()
 ```
 
 ## Supplementary resources
