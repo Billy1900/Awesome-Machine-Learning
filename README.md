@@ -65,8 +65,8 @@ def plot_x_y(x_axis, y_axis):
 
     Fig, ax = plt.subplots()
     ax.plot(x=x_axis, y=y_axis, label='loss', marker='*')
-    ax.set_xlabel('leaf nodes', fondict=font)
-    ax.set_ylabel('loss', fondict=font)
+    ax.set_xlabel('leaf nodes', fontdict=font)
+    ax.set_ylabel('loss', fontdict=font)
     ax.legend(loc='best')
 
     ax.set_xlim(min(x_axis), max(x_axis))
