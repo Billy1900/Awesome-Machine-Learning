@@ -69,8 +69,8 @@ def plot_x_y(x_axis, y_axis):
     ax.set_ylabel('loss', fondict=font)
     ax.legend(loc='best')
 
-    ax.set_xlim(min(x), max(x))
-    ax.set_ylim(min(y), max(y))
+    ax.set_xlim(min(x_axis), max(x_axis))
+    ax.set_ylim(min(y_axis), max(y_axis))
 
     plt.show()
 ```
