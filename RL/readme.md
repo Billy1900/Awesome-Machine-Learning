@@ -41,6 +41,7 @@ Reinforcement Learning is a multiple-decision process: it forms a decision-makin
 ## Toolkit
 - [OpenAI Gym](https://gym.openai.com/) is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents in everything from walking to playing games like Pong or Pinball.
 - [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
+- [Tianshou](https://tianshou.readthedocs.io/en/latest/): Tianshou (天授) is a reinforcement learning platform based on pure PyTorch.
 
 ## Books & Courses
 - [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234).
