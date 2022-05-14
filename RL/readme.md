@@ -82,6 +82,22 @@ The value function uses expectations to predict future returns. On the one hand,
 - State-value Function: It is used to measure how good or bad the current state $S_t$ is given a given policy $\pi$.
 - Action-value Function: It is used to measure how good or bad an action $a_t$ is given a given state $S_t$ and policy $\pi$.
 
+## Algorithm Classification
+According to whether the environment is known: Model-Free vs Model-Based. In general, the environment is agnostic, so the model-free problem is mainly studied here.
+- Model-free is not to learn and understand the environment. The information given by the environment is the information. Common methods include policy optimization and Q-learning.
+- Model-Based is to learn and understand the environment, learn to use a model to simulate the environment, and get feedback through the simulated environment. Model-Based is equivalent to having more simulation environment than Model-Free. Through the simulation environment, it predicts all the situations that will happen next, and then selects the best situation.
+
+<img src="3.png"></img>
+
+Divided by learning method: On-Policy vs Off-Policy
+- On-Policy means that the agent must be present and must learn while playing. A typical algorithm is Sarsa.
+- Off-Policy means that the agent can choose to play by itself or watch others play, and learn other people's code of conduct by watching others play. Off-line learning also learns from past experiences, but these past experiences are not necessarily their own. The experience of anyone can be learned, and there is no need to learn while playing, and the time of play and learning can be asynchronous. Typical methods are Q-learning, and Deep-Q-Network.
+
+According to learning objectives: Policy-Based and Value-Based
+- The Policy-Based method directly outputs the probability of the next action, and selects the action according to the probability. However, it is not necessarily that the action will be selected with the highest probability, and it will still be considered from the whole. Suitable for non-continuous and continuous actions. Common methods are Policy gradients.
+- The Value-Based method outputs the value of the action and selects the action with the highest value. Suitable for non-sequential actions. Common methods are Q-learning, Deep Q Network and Sarsa.
+- A more powerful method is the combination of the two: Actor-Critic, Actor makes actions according to probability, and Critic gives values according to actions, thereby accelerating the learning process. Common ones are A2C, A3C, DDPG, etc.
+
 ## Toolkit
 - [OpenAI Gym](https://gym.openai.com/) is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents in everything from walking to playing games like Pong or Pinball.
 - [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
