@@ -109,3 +109,4 @@ According to learning objectives: Policy-Based and Value-Based
 - [Easy-RL](https://datawhalechina.github.io/easy-rl/#/): A book written Hung-Yee Li.
 - [Reinforcement learning: an introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf), a book written from stanford and its [code implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction).
 - [Awesome Reinforcement Learning](https://github.com/aikorea/awesome-rl)
+- [强化学习](https://mofanpy.com/tutorials/machine-learning/reinforcement-learning/)
