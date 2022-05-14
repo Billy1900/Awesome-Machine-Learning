@@ -108,3 +108,4 @@ According to learning objectives: Policy-Based and Value-Based
 - [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234).
 - [Easy-RL](https://datawhalechina.github.io/easy-rl/#/): A book written Hung-Yee Li.
 - [Reinforcement learning: an introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf), a book written from stanford and its [code implementation](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction).
+- [Awesome Reinforcement Learning](https://github.com/aikorea/awesome-rl)
