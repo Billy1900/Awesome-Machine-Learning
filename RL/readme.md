@@ -38,6 +38,50 @@ A Reinforcement Learning agent needs to find the right balance between exploring
 - Difference #4: RL is a Multiple-Decision Process
 Reinforcement Learning is a multiple-decision process: it forms a decision-making chain through the time required to finish a specific job. Conversely, supervised learning is a single-decision process: one instance, one prediction.
 
+## Characteristic
+- Exploration: Reinforcement learning generally does not have direct guidance information. The Agent should continuously interact with the Environment and obtain the best policy through trial and error.
+- Delayed Return: Instructive information for reinforcement learning is rarely given and is often given after the fact (the last state). For example, in chess, the winner can only be known at the end
+
+## Terminology
+### Policy
+Policies are the rules an agent uses to decide what action to take next. can be deterministic, generally expressed as $\mu$:
+
+$$
+a_{t}=\mu\left(s_{t}\right)
+$$
+
+Or might be random, generally expressed as $\pi$:
+
+$$
+\mathrm{a}_{\mathrm{t}} \sim \pi\left(\cdot \mid \mathrm{s}_{\mathrm{t}}\right)
+$$
+
+### State Transition
+State transition, which can be deterministic or random, is generally considered to be random, and its randomness comes from the environment which can be represented by the density of states function:
+
+$$
+\mathrm{p}\left(\mathrm{s}^{\prime} \mid \mathrm{s}, \mathrm{a}\right)=\mathbb{P}\left(\mathrm{S}^{\prime}=\mathrm{s}^{\prime} \mid \mathrm{S}=\mathrm{s}, \mathrm{A}=\mathrm{a}\right)
+$$
+
+### Return
+The reward, also known as cumulated future reward, is generally expressed as U, defined as:
+
+$$
+\mathrm{U}_{\mathrm{t}}=\mathrm{R}_{\mathrm{t}}+\mathrm{R}_{\mathrm{t}+1}+\mathrm{R}_{\mathrm{t}+2}+\mathrm{R}_{\mathrm{t}+3}+\cdots
+$$
+
+where $\mathrm{R}_{\mathrm{t}}$ denotes the rewards at time t. The goal of agent is to maximize the return. RL usually use discounted return, discount rate is $\gamma$ ($\gamma \in (0, 1]$)
+
+### Value Function
+For example, in the game of chess, it is defined that winning the game gets 1 point, other actions get 0 points, and the state is the position of the pieces on the board. The values of 1 and 0 alone do not tell how well the agent is doing during the game, but the value function can give more insight.
+
+The value function uses expectations to predict future returns. On the one hand, you can know the quality of the current state without waiting for the actual occurrence of future returns. On the other hand, it summarizes various possible future returns through expectations. Using the value function can be very convenient to evaluate the quality of different strategies.
+
+<img src="value.png"></img>
+
+- State-value Function: It is used to measure how good or bad the current state $S_t$ is given a given policy $\pi$.
+- Action-value Function: It is used to measure how good or bad an action $a_t$ is given a given state $S_t$ and policy $\pi$.
+
 ## Toolkit
 - [OpenAI Gym](https://gym.openai.com/) is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents in everything from walking to playing games like Pong or Pinball.
 - [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
