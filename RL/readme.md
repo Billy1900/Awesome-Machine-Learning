@@ -102,6 +102,7 @@ According to learning objectives: Policy-Based and Value-Based
 - [OpenAI Gym](https://gym.openai.com/) is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents in everything from walking to playing games like Pong or Pinball.
 - [Duckietown](https://github.com/duckietown/gym-duckietown): Duckietown self-driving car simulator environments for OpenAI Gym.
 - [Tianshou](https://tianshou.readthedocs.io/en/latest/): Tianshou (天授) is a reinforcement learning platform based on pure PyTorch.
+- [DeepMind Lab](https://github.com/deepmind/lab): DeepMind Lab is a 3D learning environment based on id Software's Quake III Arena via ioquake3 and other open source software.
 
 ## Books & Courses
 - [CS234: Reinforcement Learning Winter 2019](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u): This is a video version of the course and the [notes](https://github.com/tallamjr/stanford-cs234).
